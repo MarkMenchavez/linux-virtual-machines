@@ -1,7 +1,7 @@
 # Linux Virtual Machines
 
 | Settings              |                                    |
-|-----------------------|------------------------------------|
+|:----------------------|------------------------------------|
 | Host                  | M1 Macbook Pro                     |
 | Type 2 Hyprvisor      | VMWare Fusion 26H1                 |
 | Processors            | 4                                  |
@@ -22,6 +22,11 @@ Debian 13.5 (Trixie) - LXDE
 Debian 13.5 (Trixie) - MATE  
 Debian 13.5 (Trixie) - Cinnamon  
 
+### Deepin
+<https://www.deepin.org>
+
+Deepin 25.1 - Deepin  
+
 ### Ubuntu
 <https://ubuntu.com>
 
@@ -36,7 +41,7 @@ Pop! OS 24.04 LTS - COSMIC
 ### Elementary OS
 <https://elementary.io>
 
-Elementary 8.1 (Circe) Pantheon  
+Elementary 8.1 (Circe) - Pantheon  
 
 ----
 
@@ -46,13 +51,6 @@ Elementary 8.1 (Circe) Pantheon
 Leap 16.0 - Sway  
 Leap 16.0 - Xfce  
 Tumbleweed - KDE Plasma  
-
-----
-
-### Deepin
-<https://www.deepin.org>
-
-Deepin 25.1 - Deepin  
 
 ----
 
@@ -80,7 +78,7 @@ NixOS 26.05 - GNOME
 ### Arch Linux ARM
 <https://archlinuxarm.org>
 
-ALARM - Hyprland  
+Arch Linux ARM - Hyprland  
 
 ----
 
