@@ -1,7 +1,6 @@
-# Arch Linux ARM
+# Arch Linux (aarch64)
 
-Steps to setup an Arch Linux ARM (aarch64) for 
-an M1 VMWare Fusion virtual machine.
+Steps to setup an Arch Linux (aarch64) for an M1 VMWare Fusion virtual machine.
 
 ### Pre-installation
 
@@ -203,7 +202,9 @@ Set up a splash screen.
 Set up root account. 
 
 ```
-# passwd
+-- Optional. We don't need to enable root account.
+-- User account below will be the admin user.
+-- # passwd
 ```
 
 Set up a user account.
@@ -237,8 +238,6 @@ $ sudo timedatectl set-ntp true
 Enable swapfile.
 
 ```
-$ sudo truncate -s 0 /swapfile
-$ sudo chattr +C /swapfile
 $ sudo btrfs filesystem mkswapfile --size 8G /swapfile
 $ sudo swapon /swapfile
 $ sudo nano /etc/fstab
@@ -288,7 +287,7 @@ $ makepkg -si
 Enable VMware Guest Tools 
 
 ```
-$ yay -S open-vm-tools.git
+$ yay -S open-vm-tools-git
 
 --- Avoid race condition with plymouth
 $ sudo systemctl edit vmtoolsd.service
