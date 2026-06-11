@@ -123,7 +123,10 @@ $ sudo pacman -S    fastfetch htop gping \
                     
                     cava wiremix \
                     
+                    stow \
+
                     starship \
+
                     bat eza ripgrep fg fzf zoxide\
                 
                     kitty \
@@ -131,4 +134,14 @@ $ sudo pacman -S    fastfetch htop gping \
 
 $ yay -S            cbonsai
                     visual-studio-code-bin
+```
+
+### dotfiles
+
+```
+$ cd ~/Projects
+$ git clone https://github.com/markmenchavez/linux-virtual-machines
+$ cd linux-virtual-machines/dotfiles
+$ stow --adopt -t ~ .b
+$ git reset --hard
 ```

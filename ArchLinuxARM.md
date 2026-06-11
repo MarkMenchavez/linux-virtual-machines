@@ -173,7 +173,7 @@ Set up a boot loader.
     title   Arch Linux ARM
     linux   /Image
     initrd  /initramfs-linux.img
-    options root=PARTUUID=<PARTUUID-of-p2> rootfstype=btrfs rw rootflags=noatime,compress=zstd,subvol=@ quiet splash loglevel=0 rd.udev.log_level=0
+    options root=PARTUUID=<PARTUUID-of-p2> rootfstype=btrfs rw rootflags=noatime,compress=zstd,subvol=@ quiet splash loglevel=0 rd.udev.log_level=0 video=efifb:off video=2048x1152 mode=2048x1152
 
 # nano /boot/loader/loader.conf
     default arch
@@ -189,8 +189,8 @@ Set up a splash screen.
 -- Edit HOOKS in /etc/mkinitcpio.conf
 -- and ensure plymouth is after systemd and before filesystems
 # nano /etc/mkinitcpio.conf
-    MODULES=(btrfs vfat crc32c)
-    HOOKS=(base systemd autodetect modconf keyboard sd-vconsole block plymouth filesystems fsck)
+    MODULES=(btrfs vmwgfx)
+    HOOKS=(base systemd autodetect modconf block keyboard keymap consolefont plymouth filesystems fsck)
 
 # plymouth-set-default-theme -R spinfinity
 
