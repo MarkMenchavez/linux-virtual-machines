@@ -1,0 +1,7 @@
+alias ls='LC_COLLATE=C eza -lAg --color=auto --group-directories-first'
+
+alias ff='fastfetch --dynamic-interval 60000 --hide-cursor --disable-linewrap'
+alias ht='htop -t'
+alias gp='gping google.com youtube.com'
+
+alias cat='bat'
